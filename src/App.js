@@ -1,14 +1,19 @@
-import Article from './components/Article.jsx';
+import React, { useState } from 'react'; //reactから関数をimportする必要がある
+import './App.css';
 
 function App() {
-  return (
-  <div>   
-    <Article
-    title={'今日からRact始めるよ！'}
-    text={'今日はどこまで理解出来るかな？'}
-    />
-  </div>
+  return(
+    <div className='App'>
+      <Button btn_txt="クリック" />
+    </div>
   );
+};
+
+function Button(props) {
+  return (
+    <button>{props.btn_txt}</button>
+  )
 }
 
-export default App;
+export default App; //index.jsでAppをインストールしてAppを使える
+
