@@ -1,19 +1,16 @@
 import React, { useState } from 'react'; //reactから関数をimportする必要がある
 import './App.css';
+import TextInput from './compornents/TextInput.jsx';
 
 function App() {
+
+  const [count, setCount] = useState(0)
   return(
-    <div className='App'>
-      <Button btn_txt="クリック" />
+    <div>
+      <p>名前：<TextInput/></p>
+      <p>メール:<TextInput/></p>
     </div>
   );
 };
 
-function Button(props) {
-  return (
-    <button>{props.btn_txt}</button>
-  )
-}
-
 export default App; //index.jsでAppをインストールしてAppを使える
-
