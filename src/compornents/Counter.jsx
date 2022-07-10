@@ -12,7 +12,7 @@ const Counter = () => {
 
     useEffect( () => {
         console.log('現在のカウント', count)
-    }, [count])
+    }, [count]) //countが変わったときに
 
     return (
         <div>
