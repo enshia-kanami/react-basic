@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import TextInput from './compornents/TextInput.jsx';
-import Counter from './compornents/Counter.jsx';
-import ToggleButton from './compornents/ToggleButton.jsx';
-import { getByTitle } from '@testing-library/react';
-import Recipe from './compornents/Recipe';
+import {Counter, Recipe, TextInput, ToggleButton} from './compornents/index'
+// import TextInput from './compornents/TextInput.jsx';
+// import Counter from './compornents/Counter.jsx';
+// import ToggleButton from './compornents/ToggleButton.jsx';
+// import { getByTitle } from '@testing-library/react';
+// import Recipe from './compornents/Recipe';
 
 function App() {
 
